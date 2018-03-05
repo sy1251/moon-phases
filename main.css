@@ -1,0 +1,49 @@
+video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -100;
+}
+
+@font-face {
+	font-family: Universe;
+	src: url(Universe.ttf);
+}
+
+h1 {
+	font-family: 'Sacramento', cursive;
+	font-size: 4em;
+	color: rgba(255, 255, 255, 0.3);
+	text-align: center;
+	text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px #fff372, 0 0 30px #fff372, 0 0 40px #fff372, 0 0 55px #fff372, 0 0 75px #fff372;
+}
+
+@keyframes rotating {
+	from {transform: rotate(0deg) scale(0.7, 0.7);}
+	to {transform: rotate(360deg) scale(0.7, 0.7);}
+}
+
+#container {
+     position: absolute;
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     width: 700px;
+     height: 500px;
+     text-align: center;
+}
+
+.moon {
+	fill: rgba(255, 243, 114, 0.7);
+	width: 100px;
+	height: 100px;
+}
+
+.moon:hover {
+	fill: rgba(176, 169, 167, 0.7);
+	animation: rotating 2s infinite linear normal;
+}
